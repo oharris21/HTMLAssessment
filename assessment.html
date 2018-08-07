@@ -2,9 +2,158 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>HTML Assessment</title>
+    <style>
+    div {
+      margin-left: 40px;
+    }
+    div2 {
+      padding-bottom: 200px;
+    }
+    div.a {
+    text-indent: 50px;
+    }
+
+    </style>
+
   </head>
   <body>
+      <h1>TEXT</h1>
+        <p><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing
+        elit. Fusce placerat molestie tortor id sagittis. Quisque eu accumsan
+        eros. Cras purus enim, bibendum vel ornare quis, tristique at velit.</p>
+          <div>
+            <p><em>Mauris</em> vehicula risus sed magna posuere auctor. Donec
+            vitae orci ac magna elementum facilisis. Aliquam eu elit sapien.
+            Curabitur rutrum et eros ut sodales.</p>
+          </div>
+        <p><strong>Nullam</strong> gravida enim quis maximus gravida. Curabitur
+        est justo, laoreet ut imperdiet et, iaculis ut est. Integer laoreet eget
+        purus nec luctus. Etiam sollicitudin, velit eu iaculis egestas, dui orci
+        posuere metus, eget porta enim neque sed odio. Suspendisse vehicula arcu
+        feugiat tincidunt maximus. Aenean aliquet ut felis et molestie.
+        Pellentesque suscipit tincidunt tristique.</p>
+
+
+      <h1>TABLE</h1>
+      <table border="1">
+        <tr>
+          <td colspan="6">Score By Quarter</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Team Name</td>
+          <td colspan="2"> First Half</td>
+          <td colspan="2"> Second Half</td>
+          <td rowspan="2">Final</td>
+        </tr>
+
+        <tr>
+          <th>Q1</th>
+          <th>Q2</th>
+          <th>Q3</th>
+          <th>Q4</th>
+        </tr>
+
+
+          <tr>
+            <td>Atlanta</td>
+            <td>7</td>
+            <td>10</td>
+            <td>3</td>
+            <td>10</td>
+            <td>30</td>
+          </tr>
+
+          <tr>
+            <td>Carolina</td>
+            <td>0</td>
+            <td>10</td>
+            <td>3</td>
+            <td>7</td>
+            <td>20</td>
+          </tr>
+
+          <tr>
+              <td><strong>Total</strong></td>
+              <td><strong>7</strong></td>
+              <td><strong>3</strong></td>
+              <td><strong>3</strong></td>
+              <td><strong>10</strong></td>
+              <td><strong>20</strong></td>
+          </tr>
+      </table>
+
+      <h1>LIST</h1>
+        <ul>
+          <li><img src="http://www.fbschedules.com/images/logos/nfl/atlanta-falcons.png"
+            alt="falcons logo" height="90" width="200"></li>
+          <li><a href="https://www.atlantafalcons.com/">Atlanta Falcons</a></li>
+            <ul>
+              <li>Coach: Dan Quinn</li>
+              <li>QB</li>
+                <ol>
+                  <li>Matt Ryan</li>
+                  <li>Matt Schaub</li>
+                  <li>Garrett Grayson</li>
+                </ol>
+          </ul>
+      </ul>
+
+      <ul>
+        <li><img src="http://a1.espncdn.com/combiner/i?img=%2Fi%2Fteamlogos%2Fnfl%2F500%2Fcar.png"
+          alt="panthers logo" height="100" width="100"></li>
+        <li><a href="https://www.panthers.com/">Carolina Panthers</a></li>
+          <ul>
+            <li>Ron Rivera</li>
+            <li>QB</li>
+              <ol>
+                <li>Cam Newton</li>
+                <li>Garrett Gilbert</li>
+                <li>Taylor Heinicke</li>
+              </ol>
+          </ul>
+      </ul>
+      <div2>
+
+      <h1>FORM</h1>
+      <form for="Name">
+        <label for="fname">First Name: </label>
+          <input type="text" fname="fname">
+        <label for="lname">Last Name: </label>
+          <input type="text" lname="lname"><br>
+      </form>
+
+      <form>
+        <label for="lname">Favorite Sport: </label>
+          <input list="sports">
+            <datalist id="sports">
+              <option value="Baseball">
+              <option value="Basketball">
+              <option value="Football">
+              <option value="Hockey">
+              <option value="Soccer">
+            </datalist>
+      </form>
+
+      <form>
+        <label for="Attended">I have: </label>
+          <input type="checkbox" name="experience" value="Attended">Attended
+          <input type="checkbox" name="experience" value="Played">Played
+          <input type="checkbox" name="experience" value="Coached">Coached
+          <input type="checkbox" name="experience" value="Bet on">Bet on<br>
+        <label for="Bet on">This sport. </label>
+      </form>
+
+      <form>
+        <label for="preference">For this sport I prefer the: </label>
+          <input type="radio" name="level" value="Amatuer">Amatuer
+          <input type="radio" name="level" value="College">College
+          <input type="radio" name="level" value="Professional">Professional
+      </form action="https://github.com/oharris21" method="post">
+          <input type="submit" value="Submit">
+      </form>
+    </div2>
 
   </body>
 </html>
