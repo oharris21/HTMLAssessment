@@ -1,0 +1,64 @@
+/* Your headers should be changed to your favorite color and set to a sans-serif
+font. (Notice they are not all the same tag!) */
+h1, h2, h3, h4, h5, h6 {
+  color: green;
+  font-family: sans-serif;
+}
+
+/* Your table should have bold/colored table headers, as well as a table border.
+Content should be centered in their respective blocks. */
+tr > th {
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+table, th, td {
+  border-style: solid;
+  border-color: black;
+}
+
+/* Your list should have square list bullets. */
+ul {
+  list-style-type: square;
+}
+
+/* When the user hovers over a hyperlink the background color of the hyperlink
+should change and it should not be underlined. */
+a:hover {
+  color: pink;
+  background-color: yellow;
+  text-decoration: none;
+}
+
+/* Set the background color of the block quote text (second paragraph) to a dark
+color and the font color to a contrasting light color. */
+p:nth-child(2) {
+  background-color: black;
+  color: red;
+}
+
+/*
+Make each team's image the background image for the list. Hint Check out the
+element > element and :first-child / :last-child selectors. Remove the image
+from above the team's list. */
+body > ul > li:first-child {
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body > ul > li:last-child {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+img {
+  display: none;
+}
+
+/* The checkbox list should not be bulleted. */
+#checkbox-grid {
+  list-style-type: none;
+}
