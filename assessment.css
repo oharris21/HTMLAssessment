@@ -10,12 +10,12 @@ Content should be centered in their respective blocks. */
 tr > th {
   font-weight: bold;
   color: red;
-  text-align: center;
 }
 
 table, th, td {
   border-style: solid;
   border-color: black;
+  text-align: center;
 }
 
 /* Your list should have square list bullets. */
